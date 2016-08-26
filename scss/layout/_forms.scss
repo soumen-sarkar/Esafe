@@ -1,0 +1,89 @@
+//Search Form fields style
+.input-group  {
+    margin-bottom: 10px;
+    width: 100%;
+    .searchInput {
+        width: 100%;
+    }
+    .form-control {
+        background-color: $white-color;
+        border-left: none;
+        font-size: 16px;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        @include border-radius(0 25px 25px 0);
+        
+        &:focus {
+            box-shadow: none;
+            border-color: $gray-light-color;
+        }
+    }
+    .input-group-addon {
+        background-color: $white-color;
+        @include border-radius(25px 0 0 25px);
+    }
+}
+//Application form style
+.formBlock {
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0 15px;
+}
+.form-control {
+        background-color: $white-color;
+        border-color: $gray-light-color;
+        font-size: 16px;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        @include border-radius(25px);
+        
+        &:focus {
+            box-shadow: none;
+            border-color: $gray-light-color;
+        }
+}
+.formBlock .form-inline .form-group {
+    float: right;
+    margin-left: 6px;
+    width: 91%;
+}
+.form-inline .form-control {
+    width: 100%;
+}
+.formBlock .checkbox-inline {
+    padding-left: 0px;
+    font-weight: bold;
+    img {
+        float: left;
+        margin-right: 5px;
+    }
+    input[type="checkbox"] {
+        position: relative;
+        margin: 0;
+    }
+}
+.formBlock textarea {
+    resize: none;
+}
+.tableDataWrap {    
+    border-top: 1px solid $gray-light-color;
+    margin-bottom: 30px;        
+    dt, dd{
+        border-bottom: 1px solid $gray-light-color;
+        padding: 15px;            
+    } 
+    
+}
+.tableData {
+    display: table;
+    margin: 0;
+    width: 100%;        
+    dt, dd{
+        display: block;
+        vertical-align: middle;
+        height: 100%;
+    } 
+}

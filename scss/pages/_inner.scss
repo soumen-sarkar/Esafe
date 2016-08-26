@@ -1,0 +1,74 @@
+/* Inner Page Style */
+.employeeImg {
+    margin-bottom: 10px;
+    @extend .imgAnimation;
+}
+
+.content ul.articleList {
+    padding-left: 0px;
+    li{        
+        &:before {
+            content: none
+        }
+    }
+}
+.articleList {
+    padding-left: 0px;
+    padding-bottom: 20px;    
+    text-align: center;
+    list-style: none;    
+    li {        
+        border-bottom: 1px solid $gray-light-color;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        img {
+            display: block;
+            margin: 0 auto 20px;
+        }
+        h3 {
+            display: block;
+            margin-bottom: 0px;
+        }
+    }
+}
+.blogImage {
+    margin-bottom: 20px;
+}
+.articleTitle {
+    margin-bottom: 20px;
+    h2, p {
+        margin-bottom: 5px;
+    }
+}
+.addressList {
+    display: table;
+    margin: 0 -15px 20px;
+    width: 100%;
+    dt, dd{        
+        display: block;
+        vertical-align: top;
+        height: 100%;
+        padding: 0 15px;
+        font-weight: normal;
+        address {
+            border-bottom: 1px solid $gray-color;
+            display: table;
+            height: 100%;
+            width: 100%;
+            word-break: break-all;
+        }
+    }     
+}
+.unorderlistDefault {
+    list-style: none;
+    padding-left: 0px;
+    li {
+        padding-bottom: 5px;
+    }
+}
+.orderlistDefault {
+    padding-left: 20px;
+    li {
+        padding-bottom: 5px;
+    }
+}

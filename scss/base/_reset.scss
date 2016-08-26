@@ -1,0 +1,66 @@
+body {
+    background-color: $white-color;	
+	color: $gray-color;
+	font-family: $regular-font-style;
+	font-size: 14px;
+}
+a {
+	color: $blue-color;
+	text-decoration: none;
+    
+    &:hover {        
+	   text-decoration: none;
+	   transition: all 0.20s linear 0s;
+    }
+    
+    &:focus {        
+	   outline: none;
+    }
+    
+    & img{
+        border: 0;   
+    }
+}
+/* Code for Select bg color with text color */
+::-moz-selection {
+    color: $white-color;
+    background: $blue-color;
+}
+::selection {
+    color: $white-color;
+    background: $blue-color;
+}
+p, ul, ol {
+	color: $gray-color;
+	font-family: $regular-font-style;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0 0 20px 0;
+	line-height: 20px;
+}
+hr {
+	background-color: $gray-light-color;
+	border: 0 none;
+	height: 1px;
+}
+.underlineTitle {
+    border-bottom: 2px solid $blue-color;
+    text-transform: uppercase;
+}
+.shadowBox {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include box-shadow(0px, 7px, 15px, 0px, rgba(0, 0, 0, 0.5));
+}
+
+.popover {
+    background-color: #ebebeb;
+    
+    max-width: 100%;
+    .arrow {
+        display: none
+    }
+    .popover-content{
+        padding: 4px 14px;
+    }
+}

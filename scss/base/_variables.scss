@@ -1,0 +1,37 @@
+/*=== FONT FAMILY ==*/
+$regular-font-style: 'SourceSansPro-Regular';
+$bold-font-style: 'SourceSansPro-Bold';
+$black-font-style: 'SourceSansPro-Black';
+
+/*=== FONT WEIGHT ==*/
+
+$light-font-weight: 300;
+$normal-font-weight: 400;
+$bold-font-weight: 700;
+
+/*=== COLOR ==*/
+
+$prussian-blue: rgba(0, 44, 75, 1);
+$blue-color: rgba(0, 75, 135, 1);
+$gray-color: rgba(61, 61, 61, 1);
+$gray-light-color: rgba(204, 204, 204, 1);
+$white-color: rgba(255, 255, 255, 1);
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+
+/*=== PREDEFINED BREAK POINTS ==*/
+
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);
+
+$imgpath: "../img";
+
+/*.header {    
+    background: url(#{$imgpath}/logo.jpg) repeat-x fixed 0 0;    
+}*/
+

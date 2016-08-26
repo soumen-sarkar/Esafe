@@ -1,0 +1,157 @@
+.btn {
+    background-color: transparent;
+    text-transform: uppercase;
+    outline: none;
+    position: relative;
+    padding: 4px 15px 5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    font-family: $bold-font-style;
+    font-size: 16px;
+    z-index: 2;
+    overflow: hidden;
+    @include border-radius (0px);
+}
+.btn:after {
+    content: '';
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+/* Button Commom Property */
+.btn-blue:after,
+.btn-white:after {
+    width: 150%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    z-index: -1;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(40deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(40deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(40deg);
+    transform: translateX(-50%) translateY(-50%) rotate(40deg);
+}
+.btn-blue-lg:after,
+.btn-white-lg:after{
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(20deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(20deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(20deg);
+    transform: translateX(-50%) translateY(-50%) rotate(20deg);
+}
+.btn-blue:hover:after,
+.btn-white:hover:after{
+    height: 250%;
+    opacity: 1;
+}
+.btn-blue:active:after,
+.btn-white:active:after{
+    height: 200%;
+    opacity: 1;
+}
+/* Button Blue */
+.btn-blue {
+    border: 1px solid $blue-color;
+    color: $blue-color;
+    min-width: 110px;
+}
+.btn-blue:after {    
+    background: $blue-color;
+}
+.btn-blue:hover,
+.btn-blue:active {
+    color: $white-color;
+}
+/* Button White */
+.btn-white {
+    border: 1px solid $white-color;
+    color: $white-color;
+    min-width: 110px;
+}
+.btn-white:after {    
+    background: $white-color;
+}
+.btn-white:hover,
+.btn-white:active {
+    color: $blue-color;
+}
+
+//Button common css effect start
+/*.btn-blue:before,
+.btn-white:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.btn-blue,
+.btn-white {    
+    background-color: transparent;
+    font-family: $bold-font-style;
+    font-size: 16px;    
+    padding: 4px 12px;
+    text-transform: uppercase;
+    @include border-radius(0);
+    
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.btn-blue:hover:before, .btn-blue:focus:before, .btn-blue:active:before,
+.btn-white:hover:before, .btn-white:focus:before, .btn-white:active:before{
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}*/
+
+//Button common css effect end
+
+//Button specific css start
+/*.btn-blue {
+    border: 1px solid $blue-color;
+    color: $blue-color;
+    
+    &:hover {
+        color: $white-color;
+    }
+    
+    &:before {
+	    background: $blue-color;
+    }    
+}
+
+.btn-white {
+    border: 1px solid $white-color;
+    color: $white-color;    
+    
+    &:hover {
+        color: $blue-color;
+    }
+    
+    &:before {
+	    background: $white-color;
+    }    
+}*/
+//Button specific css end

@@ -1,0 +1,277 @@
+
+/*=== MAX-WIDTH 767px ==*/
+@media (max-width: $screen-xs-max) { 
+    
+}
+/*=== MIN-WIDTH 768px ==*/
+@media (min-width: $screen-sm-min) {
+    body,
+    p, ul, ol {
+        font-size: 15px;
+    }
+    h1, h1 a {
+        font-size: 34px;
+    }
+    h2, h2 a {
+        font-size: 26px;
+    }
+    h3, h3 a {
+        font-size: 22px;
+    }
+    h4, h4 a {
+        font-size: 20px;
+    }
+    h5, h5 a {
+        font-size: 18px;
+    }
+    h6, h6 a {
+        font-size: 17px;
+    }
+    .headerWide {
+        background-image: url(#{$imgpath}/header-assembly-line.jpg);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    .headerInfo {
+        text-align: right;
+        ul {
+            text-align: right;
+        }
+    }
+    .input-group {
+        margin-bottom: 0px;
+        width: auto;
+    }
+    .input-group.searchInput {
+        width: 200px;
+    }
+    #navbar {
+        border-top: none;
+        .nav{
+            > li{
+                &:after {
+                    background-color: $blue-color;
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 25%;
+                    height: 50%;
+                    width: 1px;                        
+                } 
+                &:last-child:after {
+                    content: none;
+                }                
+            }
+        }
+        .dropdown-menu {
+            position: absolute;
+            width: auto;
+        }
+    }
+    .ctaRow {
+        position: absolute;
+        z-index: 3;
+        left: 0;
+        bottom: 30px;
+        margin-top: 0;
+        width: 100%;
+    }
+    .ctaWrap {
+        margin-bottom: 0;
+    }
+    .welcomeContentWide,
+    .contentWide {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .quickLink {
+        margin-bottom: 30px;
+    }
+    .shadowBox {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .formBlock {
+        padding: 0px;
+    }
+    .tableDataWrap {
+        .tableData {
+            dt {
+                width: 10%;
+                border-right: 1px solid $gray-light-color;
+            }
+            dd {
+                width: 90%;
+            }
+            dt, dd{
+                display: table-cell;
+            } 
+        }
+    }
+    .bannerWide {
+        .pageHeadingBanner {
+            margin-bottom: 0px;
+            dt {
+                width: 60%;
+            }
+            dd {
+                width: 40%;
+            }
+            dt, dd{
+                display: table-cell;
+            }
+        }
+    }
+    .addressList {
+        dt, dd{
+            width: 50%;
+            display: table-cell;
+            padding: 0 15px 15px;
+            margin-bottom: 15px;
+        } 
+    }
+    .footer {        
+        .footerMenu {
+            text-align: center;
+            li {
+                display: inline-block;
+                a{                
+                    padding: 0 10px;            
+                }
+            }
+        }
+    }
+}
+/*=== MAX-WIDTH 991px ==*/
+@media (max-width: $screen-sm-max) {
+
+}
+/*=== MIN-WIDTH 992px ==*/
+@media (min-width: $screen-md-min) {
+    body,
+    p, ul, ol {
+        font-size: 16px;
+    }
+    h1, h1 a {
+        font-size: 48px;
+    }
+    h2, h2 a {
+        font-size: 30px;
+    }
+    h3, h3 a {
+        font-size: 24px;
+    }
+    h4, h4 a {
+        font-size: 22px;
+    }
+    h5, h5 a {
+        font-size: 20px;
+    }
+    h6, h6 a {
+        font-size: 18px;
+    }
+    .input-group.searchInput {
+        width: 300px;
+    }
+    #navbar {
+        .nav{
+            > li{
+                > a {                
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .welcomeContentWide,
+    .contentWide {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .quickLink {
+        margin-bottom: 40px;
+    }
+    .shadowBox {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .bannerWide {
+        .pageHeadingBanner {
+            dt {
+                padding: 0 40px;
+            }
+        }
+    }
+    .articleList {
+        text-align: left;
+        li {
+            img {
+                float: left;
+                margin: 0;
+            }
+        }
+    }
+    .footer {
+        text-align: right;
+        margin-top: 30px;
+        .footerMenu {
+            text-align: left;
+            li {                
+                a{                
+                    padding: 0 10px;            
+                }
+                &:first-child a {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+/*=== MAX-WIDTH 1199px ==*/
+@media (max-width: $screen-md-max) {
+
+}
+/*=== MIN-WIDTH 1200px ==*/
+@media (min-width: $screen-lg-min) {
+    .input-group.searchInput {
+        width: 400px;
+    }
+    #navbar {
+        .nav{
+            > li{
+                > a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .welcomeContentWide {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .contentWide {
+        padding-top: 60px;
+        padding-bottom: 0px;
+    }
+    .quickLink {
+        margin-bottom: 60px;
+    }
+    .formBlock p,
+    .formBlock,
+    .form-group {
+        margin-bottom: 30px;
+    }
+    .bannerWide {
+        .pageHeadingBanner {
+            dt {
+                padding: 0 80px;
+            }
+        }
+    }
+    .footer {
+        margin-top: 50px;
+    }
+}

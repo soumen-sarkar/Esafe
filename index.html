@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to our site</title>
+<!-- CSS start -->
+<link href="css/developers.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- CSS end -->
+</head>
+<body ng-app="singlePageApp">
+<!-- Header start -->
+<header class="container-fluid">
+    <div class="row headerWide">
+        <div class="container header">
+            <div class="row">
+            	<div class="col-sm-3"><a href="#home"><img src="img/esafe-logo.png" alt="Esafe logo" title="Esafe" class="img-responsive logo"/></a></div>
+                <div class="col-sm-9">
+                    <div class="row">                       
+                        <div class="col-sm-3 hidden-xs">
+                            <h5>Service<br>Beyond<br>Standard</h5>                            
+                        </div>
+                        <div class="col-sm-9 headerInfo">
+                            <ul>
+                                <li><small>Select a Language:</small></li>
+                                <li><a href="#"><small>English</small></a></li>
+                                <li><a href="#"><small>Français</small></a></li>
+                            </ul>
+                            <h3><a href="tel:18005595356">Contact: 1-800-559-5356</a></h3>
+                            <div class="form-inline">
+                                <div class="input-group searchInput">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <div class="input-group">
+                                    <a href="#applicationOnline" class="btn btn-blue btn-blue-lg">ARRANGE INSPECTION</a>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--.header-->
+    </div><!--.headerWide-->
+    <div class="row navSecWide navbar-static-top">
+        <div class="container navSec">
+            
+                    <div class="navbar-header">                            
+                        <button data-target="#navbar" data-toggle="collapse" class="navbar-toggle" type="button">
+                            Menu
+                        </button>
+                    </div>                        
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="nav nav-justified">                            	
+                            <li class="active"><a href="home">Home</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">About us</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="about">About ESAFT</a></li>
+                                    <li><a href="#history">History</a></li>
+                                    <li><a href="#meetOurTeam.html">Meet our Team</a></li>
+                                    <li><a href="#ourCustomers.html">Our Customers</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Product Approvals</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#yourOptions">Your Options</a></li>
+                                    <li><a href="#fieldEvaluation">Field Evaluation</a></li>
+                                    <li><a href="#certification">Certification</a></li>
+                                    <li><a href="#medicalDevices">Medical Devices</a></li>
+                                    <li><a href="#usLavels">US Labels</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#hazardousLocations">Hazardous Locations</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact Us</a></li>                                          
+                        </ul>
+                    </div>
+        </div><!--.navSec-->    
+    </div><!--.navSecWide-->
+</header>
+<!-- Header end -->
+
+<!-- Wrapper start -->
+<div class="wrapper" ng-controller="mainController">
+    <div ng-view></div>
+</div>
+<!-- Wrapper end -->
+
+<!-- Footer start -->
+<footer class="footerWide">
+    <div class="container footer">
+        <div class="row">
+            <div class="col-md-7">
+            	<ul class="footerMenu">
+            		<li><a href="#home">Home</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#tremsUse">Terms of use</a></li>
+                    <li><a href="#privacy">Privacy</a></li>
+                    <li><a href="#complaintsPolicy">Complaints Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-md-5">            	
+                <p>&copy; 2004 - 2016 All Rights Reserved by <a href="#home">esafieldevaluation.ca</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer end -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+<!-- Script for custom script-->
+<script src="js/custom-angScript.js"></script>
+
+<!-- Script for detects HTML5 and CSS3 features in the user’s browser -->
+<script src="js/modernizr.js"></script>
+<!-- Include all compiled plugins, or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<!-- Script for stickySidebar-->
+<script src="js/scrolltofixed.js"></script>
+<!-- Script for custom script-->
+<script src="js/custom-script.js"></script>
+
+
+
+</body>
+</html>
